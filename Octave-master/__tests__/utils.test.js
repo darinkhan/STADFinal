@@ -1,11 +1,12 @@
 import * as common from "../src/utils/common";
+import { calculateCurrentTime, calculateDurationTime } from "../src/utils/player-utils";
 
 // Testing the utility functions in common.js
 // Using whitebox testing to achieve full statement coverage
 
 /*
 RESULTS of 
-> yarn test utils -t "common.js" --collectCoverage
+> yarn test utils --collectCoverage
 -----------|---------|----------|---------|---------|-------------------
 File       | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------|---------|----------|---------|---------|-------------------
@@ -89,5 +90,23 @@ describe('common.js', () => {
             common.handleError('Testing handleError is printing to logs');
             expect(consoleSpy).toHaveBeenCalledWith('Testing handleError is printing to logs');
         })
+    })
+});
+
+describe('player-utils.js', () => {
+    it('calculateDurationTime is in string format mm:ss', () => {
+        expect(calculateDurationTime(0)).toBe('0:00');
+        expect(calculateDurationTime(30)).toBe('0:30');
+        expect(calculateDurationTime(60)).toBe('1:00');
+        expect(calculateDurationTime(630)).toBe('10:30');
+        expect(calculateDurationTime(6000)).toBe('100:00');
+    });
+    it('calculateCurrentTime', () => {
+        expect(calculateCurrentTime(0)).toBe('0:00');
+        expect(calculateCurrentTime(30)).toBe('0:30');
+        expect(calculateCurrentTime(60)).toBe('1:00');
+        expect(calculateCurrentTime(630)).toBe('10:30');
+        expect(calculateCurrentTime(6000)).toBe('100:00');
+
     })
 });
