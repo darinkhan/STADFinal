@@ -1,5 +1,19 @@
-import { getArtists, addArtist } from "../src/api/artist";
-import { handleError } from "../src/utils/common";
+import { getArtists, addArtist } from "../src/api/artist.js";
+
+test('t1', async () => {
+    console.log('starting this test')
+    const res = await getArtists((snapshot) => {
+        
+        const artists = [];
+        snapshot.forEach((doc) => {
+            artists.push(doc.data().name);
+        });
+        console.log(artists);
+    });
+    console.log(res);
+},50000);
+
+
 // Testing the APIs related to Artist
 // describe('Artist', () => {
 //     it('123', async() => {
@@ -25,18 +39,6 @@ import { handleError } from "../src/utils/common";
 
 
 
-test('t1', async () => {
-    console.log('starting this test')
-    const res = await getArtists((snapshot) => {
-        
-        const artists = [];
-        snapshot.forEach((doc) => {
-            artists.push(doc.data().name);
-        });
-        console.log(artists);
-    });
-    console.log(res);
-},50000);
 
 // test('t2', async () => {
 //     const q = query(collection(db, "artists"), orderBy("name"));
