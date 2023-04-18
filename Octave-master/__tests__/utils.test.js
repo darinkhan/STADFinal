@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import * as common from "../src/utils/common";
 import * as playerUtils from "../src/utils/player-utils";
 import * as songUtils from "../src/utils/song-utils";

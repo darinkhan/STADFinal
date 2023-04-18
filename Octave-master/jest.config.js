@@ -4,8 +4,4 @@ module.exports = {
     '^.+\\.(ts|tsx)?$': 'ts-jest',
     "^.+\\.(js|jsx)$": "babel-jest",
   },
-  setupFilesAfterEnv: [
-    "<rootDir>/__tests__/mocks/localStorageMock.js"
-  ],
-  testEnvironment: 'jsdom'
 };

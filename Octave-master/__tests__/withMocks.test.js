@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import { addArtist } from '../src/api/artist.js';
 import { firestore } from './mocks/firestoreMock.js'
 import firebase from 'firebase/app'
