@@ -30,3 +30,6 @@ debug.log
 .firebaserc
 firebase-debug.log
 firebase.json
+/test-results/
+/playwright-report/
+/playwright/.cache/
