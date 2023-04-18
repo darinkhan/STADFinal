@@ -1,0 +1,48 @@
+.admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+.admin__wrapper {
+  background-color: rgba(245, 245, 245, 0.377);
+  width: 100%;
+  max-width: 500px;
+}
+
+.admim__header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.admin__form {
+  padding: 1rem;
+}
+
+.admin__formInput {
+  margin: 0.5rem 0;
+}
+
+.admin__formGroup {
+  margin: 0.5rem 0;
+}
+
+.admin__formMessage {
+  padding: 0.5rem;
+  border-radius: 3px;
+  background-color: rgba(245, 245, 245, 0.808);
+}
+
+.admin__form option {
+  background-color: transparent;
+  color: black;
+}
+
+.select {
+  margin-left: 1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+}

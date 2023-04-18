@@ -17,9 +17,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "jest",
-    "eject": "react-scripts eject"
+    "build": "npm run instrument",
+    "preinstrument": "npm run clean",
+    "instrument": "nyc instrument --compact false src instrumented",
+    "clean": "rm -rf build .nyc_output || true",
+    "report:coverage": "nyc report --reporter=html"
   },
   "eslintConfig": {
     "extends": [
