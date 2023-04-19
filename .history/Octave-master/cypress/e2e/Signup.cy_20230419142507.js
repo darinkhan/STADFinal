@@ -12,9 +12,11 @@ describe('Testing Sign up page', () => {
   it('error if form is submitted and no name is entered', () => {
 
     cy.get('#root > div > div > div > div.login__wrapper.user-select-none > p:nth-child(4) > button').click()
+
     cy.randomEmail().then((randomEmail) => {
       cy.get('#root > div > div > div > div.login__wrapper.user-select-none > form > div:nth-child(2) > input').type(randomEmail);
     });
+
     cy.get('#root > div > div > div > div.login__wrapper.user-select-none > form > div:nth-child(3) > input').type("password")
     cy.get("#root > div > div > div > div.login__wrapper.user-select-none > form").submit()
     cy.contains("Firebase: Error")
@@ -27,6 +29,8 @@ describe('Testing Sign up page', () => {
     cy.get('#root > div > div > div.navbar > div.navbar__right > button').click()
     cy.get("#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation0.MuiPaper-rounded > ul > li").click()
     cy.get('#root > div > div > div > div.login__wrapper.user-select-none > p:nth-child(4) > button').click()
+
+    
     cy.get('#root > div > div > div > div.login__wrapper.user-select-none > form > div:nth-child(1) > input').type("Sky")
     cy.get('#root > div > div > div > div.login__wrapper.user-select-none > form > div:nth-child(3) > input').type("password")
     cy.get("#root > div > div > div > div.login__wrapper.user-select-none > form").submit()
@@ -53,6 +57,8 @@ describe('Testing Sign up page', () => {
     cy.randomEmail().then((randomEmail) => {
       cy.get('#root > div > div > div > div.login__wrapper.user-select-none > form > div:nth-child(2) > input').type(randomEmail);
     });
+
+
     cy.get('#root > div > div > div > div.login__wrapper.user-select-none > form > div:nth-child(3) > input').type("password")
     cy.get('#root > div > div > div > div.login__wrapper.user-select-none > form > div:nth-child(4) > input').type("sky")
     cy.get("#root > div > div > div > div.login__wrapper.user-select-none > form").submit()
@@ -64,6 +70,7 @@ describe('Testing Sign up page', () => {
     cy.get('#root > div > div > div.navbar > div.navbar__right > button').click()
     cy.get("#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation0.MuiPaper-rounded > ul > li").click()
     cy.get('#root > div > div > div > div.login__wrapper.user-select-none > p:nth-child(4) > button').click()
+
     cy.get('#root > div > div > div > div.login__wrapper.user-select-none > p > button').click()
     cy.contains("SIGN IN")
   })

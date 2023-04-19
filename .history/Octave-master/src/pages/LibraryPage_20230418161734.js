@@ -63,8 +63,6 @@ function Library() {
   const goToFavourities = () => navigate("/playlists/favorites");
   const goToPlaylistPage = (id) => navigate(`/playlists/${id}`);
 
-  console.log("playlists: " + playlists)
-
   return (
     <div className="library">
       <div className="library__header">
@@ -105,6 +103,7 @@ function Library() {
             />
           </div>
         </div>
+
         {/*  Remaining Playlists Cards */}
         {playlists?.map((playlist) => (
           <div

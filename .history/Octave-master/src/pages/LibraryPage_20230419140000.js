@@ -63,7 +63,7 @@ function Library() {
   const goToFavourities = () => navigate("/playlists/favorites");
   const goToPlaylistPage = (id) => navigate(`/playlists/${id}`);
 
-  console.log("playlists: " + playlists)
+  console.log(playlists)
 
   return (
     <div className="library">

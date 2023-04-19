@@ -46,15 +46,8 @@ Cypress.Commands.add('randomEmail', () => {
  * Function to login
  */
 Cypress.Commands.add('login', () => {
-    cy.get('#root > div > div > div > div.login__wrapper.user-select-none > form > div:nth-child(1) > input').type('fake@gmail.com')
+    cy.visit('http://localhost:3000/')
+    cy.get('#root > div > div > div > div.login__wrapper.user-select-none > form > div:nth-child(1) > input').type('fake@email.com')
     cy.get('#root > div > div > div > div.login__wrapper.user-select-none > form > div:nth-child(2) > input').type('password')
     cy.get("#root > div > div > div > div.login__wrapper.user-select-none > form").submit()
-  });
-
-    /**
- * Function to logout
- */
-Cypress.Commands.add('logout', () => {
-    cy.get('#root > div > div > div.navbar > div.navbar__right > button').click()
-    cy.get("#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation0.MuiPaper-rounded > ul > li").click()
   });
