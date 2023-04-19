@@ -1,5 +1,5 @@
-import { beforeEach } from "node:test";
 import * as artist from "../src/api/artist.js";
+import * as playlist from '../src/api/playlist.js'
 import { deleteDoc } from "firebase/firestore";
 
 describe('artist.js', () => {
@@ -10,7 +10,6 @@ describe('artist.js', () => {
     beforeAll(async () => {
         // create the mock artist
         mockRef = await artist.addArtist(mockArtist);
-        console.log(mockRef.id);
     });
 
     afterAll(async () => {
@@ -75,4 +74,145 @@ describe('artist.js', () => {
         })
     });
 
+});
+
+
+// Note: impossibel to achieve full branch coverage because the method cannot be run successfully. 
+describe('playlist.js', () => {
+
+    // mock data used for testing
+    const mockUid = 'aDtwkK5v12NuX6mD8JJkf7RevgH3'
+    let mockRef = null; // reference to mock playlist
+
+    beforeAll(async () => {
+        // create the mock playlist to be used in other tests
+        mockRef = await playlist.createNewPlaylist('mock playlist', mockUid);
+    });
+
+    afterAll(async () => {
+        // delete the mock artist created in setup
+        await deleteDoc(mockRef);
+    });
+
+    test('create new playlist without error', async () => {
+        const name = 'Test Playlist 1'
+        await playlist.createNewPlaylist(name, mockUid).then(d => {
+            expect(d.id).not.toBe('');
+            // delete this document after creation
+            deleteDoc(d);
+        });;
+    });
+
+    test('delete newly created playlist without error', async () => {
+        const name = 'Test Playlist 2'
+        await playlist.createNewPlaylist(name, mockUid).then(d => {
+            playlist.deletePlaylist(d.id);
+        });
+    })
+
+    test('get playlist with id without error', async () => {
+        await playlist.getPlaylist(mockRef.id).then((result) => {
+            expect(result.id).toBe(mockRef.id) // check we got the same document
+        });
+    })
+
+    // ERROR: cannot run query. 
+    test('getAllPlaylist runs without error', async () => {
+        const qSnapshot = await playlist.getAllPlaylists(mockUid, (snapshot) => {
+            const playlists = snapshot.docs.map((doc) => doc.data().name);
+            // there should exist at least the playlist we made in setup
+            expect(playlists).toContainEqual('mock playlist');
+        });
+
+        // the snapshot should contain at least one document
+        expect(qSnapshot.empty === false).toBeTruthy();
+    });
+
+    // ERROR: cannot run query. 
+    test('getAllPlaylist runs without error without cb', async () => {
+        const qSnapshot = await playlist.getAllPlaylists(mockUid);
+
+        // the snapshot should contain at least one document
+        expect(qSnapshot.empty === false).toBeTruthy();
+    });
+
+
+    const mockSong = { name: 'Mock Song', url: 'Fake Url', imageUrl: 'Fake Image Url', artist: "Drake" }
+
+
+    test('add song to playlist without error', async () => {
+        await playlist.addSongToPlaylist(mockRef.id, mockSong).then(d => {
+            expect(d.id).not.toBe('');
+            // delete this document after creation
+            deleteDoc(d);
+        });
+    })
+
+    test('add song to favorites without error', async () => {
+        await playlist.addSongTofavorites(mockSong, mockUid).then(d => {
+            expect(d.id).not.toBe('');
+            // delete this document after creation
+            deleteDoc(d);
+        });
+    });
+
+
+    test('remove song from playlist without error', async () => {
+        // add song first
+        const songRef = await playlist.addSongToPlaylist(mockRef.id, mockSong);
+        playlist.deleteSongFromPlaylist('playlistsongs', songRef.id)
+    });
+
+    test('get favorite songs without error', async () => {
+        // add a song in favorite playlist
+        let tempSongRef = await playlist.addSongTofavorites(mockSong, mockUid)
+
+        // and make sure its present when getting all the favorite songs
+        await playlist.getFavouriteSongs(mockUid).then((snapshot) => {
+            const songs = snapshot.docs.map((doc) => doc.data().name);
+            expect(songs).toContainEqual(mockSong.name);
+        });
+
+        // with
+        await playlist.getFavouriteSongs(mockUid, (snapshot) => {
+            snapshot.docs.map((doc) => doc.data().name);
+        })
+
+        // delete song after done
+        deleteDoc(tempSongRef);
+    });
+
+    // BUG: cannot run query. 
+    test('get playlist songs without error', async () => {
+        // add a song in favorite playlist
+        let tempSongRef = await playlist.addSongToPlaylist(mockRef.id, mockSong)
+
+        // and make sure its present when getting all the favorite songs
+        await playlist.getPlaylistSongs(mockRef.id).then((snapshot) => {
+            const songs = snapshot.docs.map((doc) => doc.data().name);
+            expect(songs).toContainEqual(mockSong.name);
+        });
+
+        // with
+        await playlist.getPlaylistSongs(mockRef.id, (snapshot) => {
+            snapshot.docs.map((doc) => doc.data().name);
+        })
+
+        // delete song after done
+        deleteDoc(tempSongRef);
+    });
+
+    // BUG: cannot run query. 
+    test('get playlist songs without error with cb', async () => {
+        // add a song in favorite playlist
+        let tempSongRef = await playlist.addSongToPlaylist(mockRef.id, mockSong)
+
+        // with
+        await playlist.getPlaylistSongs(mockRef.id, (snapshot) => {
+            snapshot.docs.map((doc) => doc.data().name);
+        })
+
+        // delete song after done
+        deleteDoc(tempSongRef);
+    });
 });
