@@ -1,6 +1,11 @@
 import * as artist from "../src/api/artist.js";
 import * as playlist from '../src/api/playlist.js'
+import * as song from '../src/api/song.js'
 import { deleteDoc } from "firebase/firestore";
+import * as fs from 'fs';
+import * as path from 'path';
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+
 
 describe('artist.js', () => {
     // mock data used for testing
@@ -77,7 +82,7 @@ describe('artist.js', () => {
 });
 
 
-// Note: impossibel to achieve full branch coverage because the method cannot be run successfully. 
+// Note: impossible to achieve full branch coverage because the method cannot be run successfully. 
 describe('playlist.js', () => {
 
     // mock data used for testing
@@ -216,3 +221,15 @@ describe('playlist.js', () => {
         deleteDoc(tempSongRef);
     });
 });
+
+describe('song.js', () => {
+    it('upload song', async () => {
+        const image = path.join(__dirname, './mockFiles/mockImage.jpg')
+        const file = fs.readFileSync(image, {encoding:'utf8'})
+
+        let uploadTask =  await song.uploadSongToStorage(file).then((snapshot) => {
+            console.log('done uploading');
+        });
+
+    }, 50000)
+})
