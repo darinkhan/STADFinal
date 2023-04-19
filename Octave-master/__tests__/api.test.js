@@ -71,7 +71,7 @@ describe('artist.js', () => {
         querySnapshot.forEach(doc => {
             artists.push(doc.data().name);
             expect(artists.length <= 8).toBeTruthy();
-            console.log(artists);
+            // console.log(artists);
         })
     });
 
