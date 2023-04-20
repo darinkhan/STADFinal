@@ -20,7 +20,7 @@ describe('Testing home page', () => {
   it('Can play a songs audio', () => {
     
         // Click the button
-        cy.get('#root > div > div > div.app__window > div > div:nth-child(2) > div.row__songsContainer > div.row__songs > div:nth-child(1) > div.song__playButton > button').click();
+        cy.get('#root > div > div > div.app__window > div > div:nth-child(2) > div.row__songsContainer > div.row__songs > div:nth-child(1) > img').click();
     
         cy.get('audio,video').should((els)=>{
           let audible = false

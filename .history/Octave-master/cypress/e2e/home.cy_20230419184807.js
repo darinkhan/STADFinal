@@ -20,7 +20,7 @@ describe('Testing home page', () => {
   it('Can play a songs audio', () => {
     
         // Click the button
-        cy.get('#root > div > div > div.app__window > div > div:nth-child(2) > div.row__songsContainer > div.row__songs > div:nth-child(1) > div.song__playButton > button').click();
+        cy.get('#root > div > div > div.app__window > div > div:nth-child(2) > div.row__songsContainer > div.row__songs > div > div > div.song__playButton > button').click();
     
         cy.get('audio,video').should((els)=>{
           let audible = false
@@ -37,11 +37,11 @@ describe('Testing home page', () => {
         })
   })
 
-//   it('Can see song playing modal', () => {
-//     // Click the button
-//     cy.get('#root > div > div > div.app__window > div > div:nth-child(2) > div.row__songsContainer > div.row__songs > div > div > div.song__playButton > button').click()
-//     cy.contains('#root > div > div > div.player > div.player__main > div.player__song > div')
-// })
+  it('Can see song playing modal', () => {
+    // Click the button
+    cy.get('#root > div > div > div.app__window > div > div:nth-child(2) > div.row__songsContainer > div.row__songs > div > div > div.song__playButton > button').click();
+    cy.find('#root > div > div > div.player')
+})
 
 // it('Can see images of all artists', () => {
 
