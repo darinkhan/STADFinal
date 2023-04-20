@@ -60,9 +60,7 @@ describe('Testing home page', () => {
     cy.contains('home_playlist')
   })
 
-  afterEach(() => {
-    cy.logout()
-  })
+
 
 
   after(() => {

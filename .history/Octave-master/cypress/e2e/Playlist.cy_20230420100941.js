@@ -100,6 +100,7 @@ it('Can remove a song', () => {
 
   let countBefore, countAfter;
 
+  countBefore = cy.get('#root > div > div > div.app__window > div > div.playlist__container').find('.playlistsong').length
 
   cy.get("#root > div > div > div.app__window > div > div.playlist__container")
         .find('.playlistsong')
@@ -115,9 +116,9 @@ it('Can remove a song', () => {
         .find('.playlistsong')
         .then(($value) => {
           countAfter = $value.length
-          expect(countAfter).to.be.lessThan(countBefore); // assert that the count has decreased
         })
 
+  expect(countAfter).to.be.lessThan(countBefore); // assert that the count has decreased
 })
 
   afterEach(() => {

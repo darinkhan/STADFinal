@@ -56,7 +56,7 @@ it('Can make a song play next', () => {
     
   // Click the button
   cy.get('#root > div > div > div.app__window > div > div.playlist__container > div:nth-child(1) > div.playlistsong__options > button').click();
-  cy.get('#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded > ul > li:nth-child(1)').first().click();
+  cy.get('#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded > ul > li:nth-child(1)').first().shouldclick();
 
   
   cy.get('audio,video').should((els)=>{
@@ -78,7 +78,7 @@ it('Can add a song to queue', () => {
     
   // Click the button
   cy.get('#root > div > div > div.app__window > div > div.playlist__container > div:nth-child(1) > div.playlistsong__options > button').click();
-  cy.get('#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded > ul > li:nth-child(2)').first().click();
+  cy.get('#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded > ul > li:nth-child(2)').click();
 
   
   cy.get('audio,video').should((els)=>{
@@ -100,24 +100,18 @@ it('Can remove a song', () => {
 
   let countBefore, countAfter;
 
-
-  cy.get("#root > div > div > div.app__window > div > div.playlist__container")
-        .find('.playlistsong')
-        .then(($value) => {
-          countBefore = $value.length
-        })
-
+  cy.get('#root > div > div > div.app__window > div > div.playlist__container').then($row => {
+    countBefore = $row.find('.playlistsong').length; // count the number of elements in the row before an action
+  });
 
   cy.get('#root > div > div > div.app__window > div > div.playlist__container > div:nth-child(1) > div.playlistsong__options > button').click();
-  cy.get('#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded > ul > li:nth-child(3)').first().click();
+  cy.get('#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded > ul > li:nth-child(3)').click();
   
-  cy.get("#root > div > div > div.app__window > div > div.playlist__container")
-        .find('.playlistsong')
-        .then(($value) => {
-          countAfter = $value.length
-          expect(countAfter).to.be.lessThan(countBefore); // assert that the count has decreased
-        })
+  cy.get('.row').then($row => {
+    countAfter = $row.find('.playlistsong').length; // count the number of elements in the row after the action
+  });
 
+  expect(countAfter).to.be.lessThan(countBefore); // assert that the count has decreased
 })
 
   afterEach(() => {
