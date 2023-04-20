@@ -36,6 +36,28 @@ describe('Testing Admin Page', () => {
     cy.contains('invalid url')    
   })
 
+    it('Uploading Song with no song url or file throws error', () => {
+      cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(1) > div > input').type('NoSongLinked')
+      cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(3) > div > input').type('https://www.testUrl.com/')
+      cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form').submit()
+      cy.contains('Either song URL should be provided or song should be uploaded')    
+    })
+
+  it('Test that clicking the clear button removes all values', () => {
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(1) > div > input').type('SingSong1')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(2) > div > input').type('Bob')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(3) > div > input').type('https://www.testUrl.com/')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(4) > div > input').type('https://www.testUrl.com/')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form').submit()
+    cy.contains('clear').click()
+
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(1) > div > input').contains('')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(2) > div > input').contains('')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(3) > div > input').contains('')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(4) > div > input').contains('')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(5) > div > input').contains('')
+  })
+
   // ––––––––––––––––––––––––––––––––––––––––
   // –––––––––– TESTING ADD ARTIST ––––––––––
   // ––––––––––––––––––––––––––––––––––––––––
@@ -68,9 +90,6 @@ describe('Testing Admin Page', () => {
     cy.contains('Either image URL should be provided or Image should be uploaded')
   })
 
-  it('Test that clicking the clear button removes all values', () => {
-
-  })
 
   // it('Test that adding artist with image url works', () => {
   // TODO: Check upload
