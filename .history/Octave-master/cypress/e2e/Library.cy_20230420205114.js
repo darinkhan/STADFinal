@@ -22,8 +22,6 @@ describe('Testing library page', () => {
 
     //FAILURE newly created playlists not show, fault found in backend testing
     it('Can create a playlist', () => {
-      cy.login()
-      cy.get('#root > div > div > div.navbar > div.navbar__center > a:nth-child(2)').click()
       let countBefore, countAfter;
       cy.get("#root > div > div > div.app__window > div > div.library__playlists")
             .find('.library_playlist')

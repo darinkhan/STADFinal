@@ -37,6 +37,13 @@ describe('Testing home page', () => {
         })
   })
 
+  it('Can add song to favourites playlist', () => {
+    cy.login()
+    cy.get("#root > div > div > div.app__window > div > div:nth-child(2) > div.row__songsContainer > div.row__songs > div:nth-child(1) > div.song__option > button").click()
+    cy.get("#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded > ul > li:nth-child(3)").first().click()
+    cy.contains('Song added')
+  })
+
   //FAULT, can add the same song to a playlist
   it('Can add same song to favourites playlist twice', () => {
     cy.login()
@@ -54,19 +61,14 @@ describe('Testing home page', () => {
     cy.contains('home_playlist')
   })
 
-  it('Can add song to favourites playlist', () => {
-    cy.logout()
-    cy.login()
-    cy.get("#root > div > div > div.app__window > div > div:nth-child(2) > div.row__songsContainer > div.row__songs > div:nth-child(1) > div.song__option > button").click()
-    cy.get("#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded > ul > li:nth-child(3)").first().click()
-    cy.contains('Song added')
-  })
-
-
   afterEach(() => {
     cy.logout()
   })
 
+
+  after(() => {
+    cy.logout()
+  })
 
 
 })
