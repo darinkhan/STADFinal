@@ -1,6 +1,6 @@
 {
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/constants/index.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/constants/index.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/constants/index.js",
     "statementMap": {
       "0": {
         "start": {
@@ -126,18 +126,18 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 3,
-      "1": 3,
-      "2": 3,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 3
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "5": 5,
+      "6": 5,
+      "7": 5,
+      "8": 5,
+      "9": 5,
+      "10": 5,
+      "11": 5
     },
     "f": {},
     "b": {},
@@ -145,7 +145,7 @@
     "hash": "e6782add9c3e12f9b9f95bd9a8364820e35170ac"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/actions/authActions.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/actions/authActions.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/actions/authActions.js",
     "statementMap": {
       "0": {
         "start": {
@@ -240,21 +240,21 @@
     },
     "branchMap": {},
     "s": {
-      "0": 3,
-      "1": 2,
-      "2": 3,
-      "3": 2
+      "0": 9,
+      "1": 11,
+      "2": 9,
+      "3": 5
     },
     "f": {
-      "0": 2,
-      "1": 2
+      "0": 11,
+      "1": 5
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "238c1ecc219425eed95858acb2460c43f0c51b08"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/firebase.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/firebase.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/firebase.js",
     "statementMap": {
       "0": {
         "start": {
@@ -330,13 +330,13 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 3,
-      "1": 3,
-      "2": 3,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3
+      "0": 9,
+      "1": 9,
+      "2": 9,
+      "3": 9,
+      "4": 9,
+      "5": 9,
+      "6": 9
     },
     "f": {},
     "b": {},
@@ -344,7 +344,7 @@
     "hash": "f2108af8137f83c5b54a324f020d30157dc397d3"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/api/auth.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/api/auth.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/api/auth.js",
     "statementMap": {
       "0": {
         "start": {
@@ -784,33 +784,33 @@
       }
     },
     "s": {
-      "0": 3,
+      "0": 9,
       "1": 0,
-      "2": 3,
-      "3": 3,
-      "4": 3,
-      "5": 2,
-      "6": 3,
+      "2": 9,
+      "3": 9,
+      "4": 9,
+      "5": 9,
+      "6": 9,
       "7": 0,
       "8": 0,
       "9": 0,
       "10": 0,
-      "11": 3,
-      "12": 5,
-      "13": 3,
+      "11": 9,
+      "12": 14,
+      "13": 9,
       "14": 0,
-      "15": 3,
+      "15": 9,
       "16": 0,
       "17": 0
     },
     "f": {
       "0": 0,
-      "1": 3,
-      "2": 2,
+      "1": 9,
+      "2": 9,
       "3": 0,
       "4": 0,
       "5": 0,
-      "6": 5,
+      "6": 14,
       "7": 0,
       "8": 0
     },
@@ -824,7 +824,7 @@
     "hash": "a2ea085a350587d3636c82894ef233ac3476a2f3"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/actions/currentSessionActions.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/actions/currentSessionActions.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/actions/currentSessionActions.js",
     "statementMap": {
       "0": {
         "start": {
@@ -1139,27 +1139,27 @@
     },
     "branchMap": {},
     "s": {
-      "0": 3,
+      "0": 9,
       "1": 0,
-      "2": 3,
+      "2": 9,
       "3": 0,
-      "4": 3,
+      "4": 9,
       "5": 0,
-      "6": 3,
+      "6": 9,
       "7": 0,
-      "8": 3,
+      "8": 9,
       "9": 0,
-      "10": 3,
+      "10": 9,
       "11": 0,
-      "12": 3,
+      "12": 9,
       "13": 0
     },
     "f": {
-      "0": 0,
-      "1": 0,
+      "0": 2,
+      "1": 1,
       "2": 0,
       "3": 0,
-      "4": 0,
+      "4": 1,
       "5": 0,
       "6": 0
     },
@@ -1168,7 +1168,7 @@
     "hash": "9f34c12fface2c86913d2dddbec9d5aca5aa8326"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/utils/player-utils.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/utils/player-utils.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/utils/player-utils.js",
     "statementMap": {
       "0": {
         "start": {
@@ -1396,11 +1396,11 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
+      "0": 1,
+      "1": 1,
+      "2": 1,
       "3": 0,
-      "4": 0,
+      "4": 1,
       "5": 0,
       "6": 0,
       "7": 0,
@@ -1408,13 +1408,13 @@
       "9": 0
     },
     "f": {
-      "0": 0,
+      "0": 1,
       "1": 0
     },
     "b": {
       "0": [
         0,
-        0
+        1
       ],
       "1": [
         0,
@@ -1425,7 +1425,7 @@
     "hash": "d66468e0a1372a07a6d2bfa8ed9499026850d2c9"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/utils/song-utils.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/utils/song-utils.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/utils/song-utils.js",
     "statementMap": {
       "0": {
         "start": {
@@ -2329,81 +2329,81 @@
       }
     },
     "s": {
-      "0": 3,
+      "0": 9,
       "1": 0,
       "2": 0,
-      "3": 4,
-      "4": 4,
+      "3": 18,
+      "4": 18,
       "5": 0,
       "6": 0,
       "7": 0,
-      "8": 0,
+      "8": 1,
       "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
+      "10": 1,
+      "11": 1,
+      "12": 1,
       "13": 0,
       "14": 0,
       "15": 0,
       "16": 0,
       "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
+      "18": 1,
+      "19": 1,
+      "20": 1,
+      "21": 1,
+      "22": 1,
       "23": 0,
       "24": 0,
       "25": 0,
-      "26": 0,
+      "26": 1,
       "27": 0,
       "28": 0,
       "29": 0,
       "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
+      "31": 1,
+      "32": 1,
+      "33": 1,
       "34": 0,
       "35": 0,
       "36": 0,
-      "37": 0
+      "37": 1
     },
     "f": {
       "0": 0,
-      "1": 4,
+      "1": 18,
       "2": 0,
       "3": 0,
-      "4": 0,
+      "4": 1,
       "5": 0,
       "6": 0,
-      "7": 0,
+      "7": 1,
       "8": 0,
       "9": 0,
-      "10": 0
+      "10": 1
     },
     "b": {
       "0": [
         0,
-        4
+        18
       ],
       "1": [
         0,
-        0
+        1
       ],
       "2": [
         0,
-        0
+        1
       ],
       "3": [
         0,
         0
       ],
       "4": [
-        0,
+        1,
         0
       ],
       "5": [
-        0,
+        1,
         0
       ],
       "6": [
@@ -2415,7 +2415,7 @@
     "hash": "f8490ee684e4e662f80b6f4381d551ca2e681bb9"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/utils/common.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/utils/common.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/utils/common.js",
     "statementMap": {
       "0": {
         "start": {
@@ -2904,7 +2904,7 @@
     },
     "branchMap": {},
     "s": {
-      "0": 3,
+      "0": 9,
       "1": 0,
       "2": 0,
       "3": 0,
@@ -2930,7 +2930,7 @@
       "23": 0,
       "24": 0,
       "25": 0,
-      "26": 3,
+      "26": 9,
       "27": 0,
       "28": 0
     },
@@ -2949,7 +2949,7 @@
     "hash": "a89667e56fdff5c7d7a38b97d9a8fba17ddca6dc"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/api/playlist.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/api/playlist.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/api/playlist.js",
     "statementMap": {
       "0": {
         "start": {
@@ -3531,29 +3531,29 @@
       }
     },
     "s": {
-      "0": 3,
+      "0": 9,
       "1": 0,
-      "2": 3,
+      "2": 9,
       "3": 0,
-      "4": 3,
+      "4": 9,
       "5": 0,
-      "6": 3,
-      "7": 2,
-      "8": 2,
-      "9": 3,
+      "6": 9,
+      "7": 9,
+      "8": 9,
+      "9": 9,
       "10": 0,
       "11": 0,
       "12": 0,
-      "13": 3,
+      "13": 9,
       "14": 0,
       "15": 0,
       "16": 0,
-      "17": 3,
+      "17": 9,
       "18": 0,
-      "19": 3,
-      "20": 1,
-      "21": 1,
-      "22": 3,
+      "19": 9,
+      "20": 3,
+      "21": 3,
+      "22": 9,
       "23": 0,
       "24": 0
     },
@@ -3561,21 +3561,21 @@
       "0": 0,
       "1": 0,
       "2": 0,
-      "3": 2,
+      "3": 9,
       "4": 0,
       "5": 0,
       "6": 0,
-      "7": 1,
+      "7": 3,
       "8": 0
     },
     "b": {
       "0": [
         0,
-        2
+        9
       ],
       "1": [
         0,
-        1
+        3
       ],
       "2": [
         0,
@@ -3586,7 +3586,7 @@
     "hash": "6a038f4958f3a5c18c4bb196e206d906a2317c19"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/actions/playlistActions.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/actions/playlistActions.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/actions/playlistActions.js",
     "statementMap": {
       "0": {
         "start": {
@@ -3637,7 +3637,7 @@
     },
     "branchMap": {},
     "s": {
-      "0": 3,
+      "0": 9,
       "1": 0
     },
     "f": {
@@ -3648,7 +3648,7 @@
     "hash": "7ee54b8a4823ad8d089a714fc431ede696456563"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/hooks/useSongFunctions.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/hooks/useSongFunctions.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/hooks/useSongFunctions.js",
     "statementMap": {
       "0": {
         "start": {
@@ -4912,17 +4912,17 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
+      "0": 138,
+      "1": 138,
+      "2": 138,
+      "3": 138,
+      "4": 138,
+      "5": 138,
       "6": 0,
       "7": 0,
       "8": 0,
       "9": 0,
-      "10": 0,
+      "10": 138,
       "11": 0,
       "12": 0,
       "13": 0,
@@ -4940,7 +4940,7 @@
       "25": 0,
       "26": 0,
       "27": 0,
-      "28": 0,
+      "28": 138,
       "29": 0,
       "30": 0,
       "31": 0,
@@ -4954,19 +4954,19 @@
       "39": 0,
       "40": 0,
       "41": 0,
-      "42": 0,
+      "42": 138,
       "43": 0,
       "44": 0,
       "45": 0,
-      "46": 0,
+      "46": 138,
       "47": 0,
       "48": 0,
-      "49": 0
+      "49": 138
     },
     "f": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
+      "0": 138,
+      "1": 138,
+      "2": 138,
       "3": 0,
       "4": 0,
       "5": 0,
@@ -4977,10 +4977,10 @@
     "b": {
       "0": [
         0,
-        0
+        1
       ],
       "1": [
-        0,
+        1,
         0
       ],
       "2": [
@@ -5040,7 +5040,7 @@
     "hash": "61955d639edf2290fe0431aa007c7f05be5cb237"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/hooks/useMoveLeftRight.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/hooks/useMoveLeftRight.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/hooks/useMoveLeftRight.js",
     "statementMap": {
       "0": {
         "start": {
@@ -5624,65 +5624,65 @@
       }
     },
     "s": {
-      "0": 12,
-      "1": 12,
-      "2": 12,
-      "3": 12,
-      "4": 6,
-      "5": 6,
-      "6": 6,
-      "7": 12,
+      "0": 70,
+      "1": 70,
+      "2": 70,
+      "3": 70,
+      "4": 31,
+      "5": 31,
+      "6": 27,
+      "7": 70,
       "8": 0,
       "9": 0,
       "10": 0,
       "11": 0,
-      "12": 12,
+      "12": 70,
       "13": 0,
       "14": 0,
       "15": 0,
       "16": 0,
       "17": 0,
-      "18": 12,
-      "19": 0,
-      "20": 0,
+      "18": 70,
+      "19": 8,
+      "20": 8,
       "21": 0,
       "22": 0,
       "23": 0,
-      "24": 0,
+      "24": 10,
       "25": 0,
       "26": 0,
-      "27": 12,
-      "28": 0,
-      "29": 12
+      "27": 70,
+      "28": 8,
+      "29": 70
     },
     "f": {
-      "0": 12,
-      "1": 6,
-      "2": 6,
+      "0": 70,
+      "1": 31,
+      "2": 27,
       "3": 0,
       "4": 0,
-      "5": 0,
-      "6": 0
+      "5": 8,
+      "6": 8
     },
     "b": {
       "0": [
-        0,
+        8,
         0
       ],
       "1": [
-        0,
+        10,
         0
       ],
       "2": [
         0,
-        0
+        10
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "7f80eb9e8fda6a07534da79292e7f7e615fab181"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/actions/newReleasesActions.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/actions/newReleasesActions.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/actions/newReleasesActions.js",
     "statementMap": {
       "0": {
         "start": {
@@ -5733,18 +5733,18 @@
     },
     "branchMap": {},
     "s": {
-      "0": 3,
-      "1": 1
+      "0": 9,
+      "1": 6
     },
     "f": {
-      "0": 1
+      "0": 6
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "f85f79d9112147100cb0c20b323f05722310cb02"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/api/song.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/api/song.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/api/song.js",
     "statementMap": {
       "0": {
         "start": {
@@ -6156,25 +6156,25 @@
       }
     },
     "s": {
-      "0": 3,
+      "0": 9,
       "1": 0,
       "2": 0,
       "3": 0,
-      "4": 3,
+      "4": 9,
       "5": 0,
-      "6": 3,
+      "6": 9,
       "7": 0,
       "8": 0,
-      "9": 3,
+      "9": 9,
       "10": 0,
       "11": 0,
-      "12": 3,
-      "13": 2,
-      "14": 2,
-      "15": 3,
-      "16": 0,
-      "17": 0,
-      "18": 3,
+      "12": 9,
+      "13": 9,
+      "14": 9,
+      "15": 9,
+      "16": 2,
+      "17": 2,
+      "18": 9,
       "19": 0,
       "20": 0
     },
@@ -6183,20 +6183,20 @@
       "1": 0,
       "2": 0,
       "3": 0,
-      "4": 2,
-      "5": 0,
+      "4": 9,
+      "5": 2,
       "6": 0
     },
     "b": {
       "0": [
-        2
+        9
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "189cbb6b8e7f251c3594c87290648ffdd31489df"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/api/artist.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/api/artist.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/api/artist.js",
     "statementMap": {
       "0": {
         "start": {
@@ -6608,27 +6608,27 @@
       }
     },
     "s": {
-      "0": 3,
+      "0": 9,
       "1": 0,
       "2": 0,
-      "3": 3,
+      "3": 9,
       "4": 0,
       "5": 0,
-      "6": 3,
+      "6": 9,
       "7": 0,
       "8": 0,
       "9": 0,
-      "10": 3,
+      "10": 9,
       "11": 0,
-      "12": 3,
+      "12": 9,
       "13": 0,
       "14": 0,
-      "15": 3,
+      "15": 9,
       "16": 0,
       "17": 0,
-      "18": 3,
-      "19": 2,
-      "20": 2
+      "18": 9,
+      "19": 9,
+      "20": 9
     },
     "f": {
       "0": 0,
@@ -6637,18 +6637,18 @@
       "3": 0,
       "4": 0,
       "5": 0,
-      "6": 2
+      "6": 9
     },
     "b": {
       "0": [
-        2
+        9
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "14084b337907b68e3916690abbffaf84ef0f4d73"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/actions/artistsActions.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/actions/artistsActions.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/actions/artistsActions.js",
     "statementMap": {
       "0": {
         "start": {
@@ -6699,18 +6699,18 @@
     },
     "branchMap": {},
     "s": {
-      "0": 3,
-      "1": 1
+      "0": 9,
+      "1": 6
     },
     "f": {
-      "0": 1
+      "0": 6
     },
     "b": {},
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "3c541ef44ba41fcb7f5f93bbef57145b1820a125"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/authReducer.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/authReducer.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/reducers/authReducer.js",
     "statementMap": {
       "0": {
         "start": {
@@ -6864,30 +6864,30 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 15,
-      "2": 2,
-      "3": 2,
-      "4": 11
+      "0": 9,
+      "1": 55,
+      "2": 11,
+      "3": 5,
+      "4": 39
     },
     "f": {
-      "0": 15
+      "0": 55
     },
     "b": {
       "0": [
-        11
+        32
       ],
       "1": [
-        2,
-        2,
-        11
+        11,
+        5,
+        39
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "ff0b9143864d7ac2c29bbb91127c7c248e2278ad"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/newReleasesReducer.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/newReleasesReducer.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/reducers/newReleasesReducer.js",
     "statementMap": {
       "0": {
         "start": {
@@ -7021,28 +7021,28 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 15,
-      "2": 1,
-      "3": 14
+      "0": 9,
+      "1": 55,
+      "2": 6,
+      "3": 49
     },
     "f": {
-      "0": 15
+      "0": 55
     },
     "b": {
       "0": [
-        11
+        32
       ],
       "1": [
-        1,
-        14
+        6,
+        49
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "7bc97d446eb819b18f5d190e52d7947a013985f0"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/artistsReducer.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/artistsReducer.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/reducers/artistsReducer.js",
     "statementMap": {
       "0": {
         "start": {
@@ -7176,28 +7176,28 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 15,
-      "2": 1,
-      "3": 14
+      "0": 9,
+      "1": 55,
+      "2": 6,
+      "3": 49
     },
     "f": {
-      "0": 15
+      "0": 55
     },
     "b": {
       "0": [
-        11
+        32
       ],
       "1": [
-        1,
-        14
+        6,
+        49
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "901366c3d8a27fe533e6b442a35425a45a6b154f"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/currentSessionReducer.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/currentSessionReducer.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/reducers/currentSessionReducer.js",
     "statementMap": {
       "0": {
         "start": {
@@ -7441,39 +7441,42 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
-      "2": 15,
+      "0": 9,
+      "1": 9,
+      "2": 55,
       "3": 0,
       "4": 0,
       "5": 0,
       "6": 0,
       "7": 0,
       "8": 0,
-      "9": 15
+      "9": 55
     },
     "f": {
-      "0": 15
+      "0": 55
     },
     "b": {
       "0": [
-        11
+        32
       ],
       "1": [
+        1,
+        2,
+        1,
         0,
         0,
         0,
         0,
         0,
         0,
-        15
+        55
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "a1608de3b9c763d07c6afcb3a0e74791babe3eff"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/playListReducer.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/playListReducer.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/reducers/playListReducer.js",
     "statementMap": {
       "0": {
         "start": {
@@ -7607,28 +7610,28 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 15,
+      "0": 9,
+      "1": 55,
       "2": 0,
-      "3": 15
+      "3": 55
     },
     "f": {
-      "0": 15
+      "0": 55
     },
     "b": {
       "0": [
-        11
+        32
       ],
       "1": [
         0,
-        15
+        55
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "7a518a05df4fe516ff2a56e08bf8f7308827a6da"
   },
   "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/index.js": {
-    "path": "/Users/anthonyskyng-thow-hing/Documents/SoftwareTesting/STADFinal/Octave-master/src2/reducers/index.js",
+    "path": "/Users/darinkhan/Documents/Johns Hopkins/STADFinal/Octave-master/src2/reducers/index.js",
     "statementMap": {
       "0": {
         "start": {
@@ -7746,19 +7749,19 @@
       }
     },
     "s": {
-      "0": 3,
-      "1": 3,
-      "2": 9,
-      "3": 2,
-      "4": 7
+      "0": 9,
+      "1": 9,
+      "2": 37,
+      "3": 5,
+      "4": 32
     },
     "f": {
-      "0": 9
+      "0": 37
     },
     "b": {
       "0": [
-        2,
-        7
+        5,
+        32
       ]
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
