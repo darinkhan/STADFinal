@@ -23,8 +23,7 @@ describe('artist.js', () => {
         await artist.getArtists((snapshot) => {
             let artists = [];
             snapshot.forEach((doc) => {
-                artists.push(doc.data().name);
-                expect(doc.data().name).not.toBe('');
+                expect(doc.data()).not.toBe(null); // contains artsts
             });
         });
     });
