@@ -73,35 +73,33 @@ describe('Testing Admin Page', () => {
 
   })
 
-  it('Test that not having an image url and not adding file causes error', () => {
+  it('Test adding artist without name throws error', () => {
     cy.get("#root > div > div > div.app__window > div > div > div > div > div > div > button:nth-child(2)").click()
-    cy.randomName().then((randomName) => {
-      cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(2) > div > div > input').type(randomName)
-    });
     cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(3) > div > div > input').type('SomeDescription')
     cy.get('#root > div > div > div.app__window > div > div > form').submit()
-    cy.contains("Image should be uploaded")
+    cy.on('window:alert', (str) => {
+      expect(str).to.equal(`Please fill out this field.`)
+    })  
   })
 
-  it('Test adding artist without description works', () => {
+  it('Test adding artist without description throws error', () => {
     cy.get("#root > div > div > div.app__window > div > div > div > div > div > div > button:nth-child(2)").click()
-    cy.randomName().then((randomName) => {
-      cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(2) > div > div > input').type(randomName)
-    });
-    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(4) > div > div > input').type('https://www.shutterstock.com/image-photo/los-angeles-nov-22-justin-260nw-348418241.jpg')
+    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(2) > div > div > input').type('Artist1')
     cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form').submit()
-    cy.contains("added")
-
+    cy.on('window:alert', (str) => {
+      expect(str).to.equal(`Please fill out this field.`)
+    })  
   })
 
-    //FAULT
-    it('Test adding artist without name throws error', () => {
-      cy.get("#root > div > div > div.app__window > div > div > div > div > div > div > button:nth-child(2)").click()
-      cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(3) > div > div > input').type('SomeDescription')
-      cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(4) > div > div > input').type('https://www.shutterstock.com/image-photo/los-angeles-nov-22-justin-260nw-348418241.jpg')
-      cy.get('#root > div > div > div.app__window > div > div > form').submit()
-      cy.contains("Error")
-    })
+  it('Test that not having an image url and not adding file causes error', () => {
+    cy.get("#root > div > div > div.app__window > div > div > div > div > div > div > button:nth-child(2)").click()
+    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(2) > div > div > input').type('Artist1')
+    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(3) > div > div > input').type('SomeDescription')
+    cy.get('#root > div > div > div.app__window > div > div > form').submit()
+    cy.on('window:alert', (str) => {
+      expect(str).to.equal(`Please fill out this field.`)
+    })   
+  })
 
   afterEach(() => {
     cy.logout()

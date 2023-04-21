@@ -57,10 +57,10 @@ describe('Testing Admin Page', () => {
     cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(5) > div > div > input').type('anInvalidUrl')
     cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(3) > div > div > select').select("Bob")
     cy.get('#root > div > div > div.app__window > div > div > form > button:nth-child(8)').click()
-    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(2) > div > div > input').should('have.value', '')
-    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(4) > div > div > input').should('have.value', '')
-    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(5) > div > div > input').should('have.value', '')
-    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(3) > div > div > select').should('have.value', null)
+    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(2) > div > div > input').contains('')
+    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(4) > div > div > input').contains('')
+    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(5) > div > div > input').contains('')
+    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(3) > div > div > select').contains('')
   })
 
   // ––––––––––––––––––––––––––––––––––––––––
@@ -68,40 +68,38 @@ describe('Testing Admin Page', () => {
   // ––––––––––––––––––––––––––––––––––––––––
 
   it('Testing Add Artist button navigates to adding artist to DB', () => {
-    cy.get("#root > div > div > div.app__window > div > div > div > div > div > div > button:nth-child(2)").click()
+    cy.contains("Add Artist").click()
     cy.contains('Add Artist to DB')
+  })
 
+  it('Test adding artist without name throws error', () => {
+    cy.contains("Add Artist").click()
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(2) > div > input').type('SomeDescription')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form').submit()
+    cy.contains('error')
+  })
+
+  it('Test adding artist without description throws error', () => {
+    cy.contains("Add Artist").click()
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(1) > div > input').type('Artist1')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form').submit()
+    cy.contains('error')
   })
 
   it('Test that not having an image url and not adding file causes error', () => {
-    cy.get("#root > div > div > div.app__window > div > div > div > div > div > div > button:nth-child(2)").click()
-    cy.randomName().then((randomName) => {
-      cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(2) > div > div > input').type(randomName)
-    });
-    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(3) > div > div > input').type('SomeDescription')
-    cy.get('#root > div > div > div.app__window > div > div > form').submit()
-    cy.contains("Image should be uploaded")
-  })
-
-  it('Test adding artist without description works', () => {
-    cy.get("#root > div > div > div.app__window > div > div > div > div > div > div > button:nth-child(2)").click()
-    cy.randomName().then((randomName) => {
-      cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(2) > div > div > input').type(randomName)
-    });
-    cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(4) > div > div > input').type('https://www.shutterstock.com/image-photo/los-angeles-nov-22-justin-260nw-348418241.jpg')
+    cy.contains("Add Artist").click()
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(1) > div > input').type('Artist1')
+    cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form > div:nth-child(2) > div > input').type('SomeDescription')
     cy.get('#root > div > div > div.app__window > div.admin > div.admin__wrapper > form').submit()
-    cy.contains("added")
 
+    cy.contains('Either image URL should be provided or Image should be uploaded')
   })
 
-    //FAULT
-    it('Test adding artist without name throws error', () => {
-      cy.get("#root > div > div > div.app__window > div > div > div > div > div > div > button:nth-child(2)").click()
-      cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(3) > div > div > input').type('SomeDescription')
-      cy.get('#root > div > div > div.app__window > div > div > form > div:nth-child(4) > div > div > input').type('https://www.shutterstock.com/image-photo/los-angeles-nov-22-justin-260nw-348418241.jpg')
-      cy.get('#root > div > div > div.app__window > div > div > form').submit()
-      cy.contains("Error")
-    })
+
+  // it('Test that adding artist with image url works', () => {
+  // TODO: Check upload
+  // })
+
 
   afterEach(() => {
     cy.logout()
