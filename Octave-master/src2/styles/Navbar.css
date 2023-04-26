@@ -1,0 +1,75 @@
+.navbar{
+    position: sticky;
+    z-index: 50;
+    top: 0;
+    background-color: var(--bgColor);
+    padding: 0.4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid var(--songBgColor);
+}
+
+.navbar__logo,
+.navbar__avatar{
+    object-fit: contain;
+    width: 1.6rem !important;
+    height: 1.6rem !important;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar__center{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.navbar__link{
+    color: whitesmoke;
+    margin: 0 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.navbar__link--active{
+    opacity: 1;
+}
+
+.navbar__link:hover{
+    opacity: 0.9;
+    color: white;
+}
+
+.navbar__linkIcon{
+    display: none;
+}
+
+.navbar__linkIcon .MuiSvgIcon-root .MuiSvgIcon-fontSizeLarge{
+    transform: scale(0.9) !important;  
+}
+
+.navbar__rightMenuItem{
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:600px){
+    .navbar{
+        padding: 0.4rem 0.5rem;
+    }
+    .navbar__linkSpan{
+        display:none;
+    }
+    .navbar__linkIcon{
+        display: inline;
+    }
+
+    .navbar__center{
+        padding-top: 5px;
+    }
+    
+}
