@@ -1,8 +1,8 @@
 # STADFinal
 
-This repository contains the code for our Software Testing and Debugging Final.
+Testing Octave, a music streaming web app made with React and Firebase. The live software under test can be viewed [here](https://octave-music.web.app/).
 
-## How to run the tests:
+## Run Instructions
 1. Clone this repository 
 
 
@@ -38,3 +38,19 @@ This repository contains the code for our Software Testing and Debugging Final.
   - run `yarn test` to run all tests
   - run `yarn test --collectCoverage` to run all the tests and collect coverage
   - run `yarn test [filename]` to run the tests in `[filename]`.
+
+## File stucture
+`Octave-master/src/` contains the instrumented code done with istanbul. This is necessary to collect coverage, and does not functionally change the code. 
+
+
+
+`Octave-master/src-non-instrumented/` contains the original code without instrumentation. This is the SUT. 
+
+
+`Octave-master/__tests__/` contains all the test files needed to test the backend. 
+- `api.test.js` tests all the files in the `Octave-master/src/api/` file except for `auth.js`.
+- `mock.test.js` tests the `Octave-master/src/api/auth.js` file using mocks.
+- `utils.test.js` tests all the utility functions in `Octave-master/src/utils/`.
+
+
+`Octave-master/cypress/` contains the front-end tests located in the `e2e/` folder. The output files such as screenshots will be generated in `screenshots/` after running the tests.
