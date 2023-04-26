@@ -19,7 +19,7 @@
     "start": "react-scripts start",
     "build": "npm run instrument",
     "preinstrument": "npm run clean",
-    "instrument": "nyc instrument --compact false src2 src",
+    "instrument": "nyc instrument --compact false src-non-instrumented src",
     "clean": "rm -rf build .nyc_output || true",
     "report:coverage": "nyc report --reporter=html"
   },
