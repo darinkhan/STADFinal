@@ -114,3 +114,26 @@ For back-end coverage, we had an overall 97.3% statement coverage. We were unabl
 We decided against doing load and security testing since the application is using Firebase and utilizes a lot of Google's robust resources. Therefore, it would have been a pointless effort as no faults would be discovered. **Instead, we decided to conduct extensive non-functional tests to detect more faults. We also added addition unit and integration tests on the backend to achieve 97.3% statement coverage**
 
 ## Non-functional tests
+
+### GUI Testing
+
+For our non functional testing, we tested both the application UI and documentation. We gave the Octave application to 10 users with no prior exposure to Octave, and asked them to complete a series of tasks. These included:
+
+1. Adding a song to the favourites playlist
+2. Adding a new playlist
+3. Adding a song to the database
+4. Adding an artist to the database
+5. Playing a song
+6. Queuing a song
+7. Search up an existing song
+8. Search up an existing artist
+
+All 10 users were able to complete most tasks. However, none were able to add a song or artist to the database, and most were confused about whether they actually managed to create a new playlist (since the application had an error where it would not create/show new playlists, as mentioned earlier).
+
+We also asked them to fill out a survey after they were done. The survey asked them to rate the application on a scale of 1-5 on ease of use, and the application got an average score of 3.70.
+
+### Documentation Testing
+
+For documentation testing, each group member attempted to create a new instance of the application using the documentation provided. We found that the documentation was not very clear, and was missing a lot of steps. For example, the documentation did not mention the variables needed in the firebase config file, as well as the steps that were needed to create the firebase project indexes that were mentioned.
+
+We also gave the documentation to another computer science student, who ran into the same issues. Additionally, they did not understand the firebase commands and where to find API keys, as they did not have prior experience with Firebase; the documentation did not provide any significant information on where to find these required keys (other than that they were needed).
