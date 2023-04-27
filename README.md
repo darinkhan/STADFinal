@@ -113,6 +113,8 @@ For back-end coverage, we had an overall 97.3% statement coverage. We were unabl
 
 We decided against doing load and security testing since the application is using Firebase and utilizes a lot of Google's robust resources. Therefore, it would have been a pointless effort as no faults would be discovered. **Instead, we decided to conduct extensive non-functional tests to detect more faults. We also added addition unit and integration tests on the backend to achieve 97.3% statement coverage**
 
+We did not do REST API testing with REST Assured because we realized that the calls to the Firebase were not done through API calls. Instead application interacted with Firebase through the use of its SDK. The only thing this affected was the tool that we would use to test these functions. We stuck with Jest.
+
 ## Non-functional tests
 
 ### GUI Testing
