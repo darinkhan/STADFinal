@@ -139,3 +139,6 @@ We also asked them to fill out a survey after they were done. The survey asked t
 For documentation testing, each group member attempted to create a new instance of the application using the documentation provided. We found that the documentation was not very clear, and was missing a lot of steps. For example, the documentation did not mention the variables needed in the firebase config file, as well as the steps that were needed to create the firebase project indexes that were mentioned.
 
 We also gave the documentation to another computer science student, who ran into the same issues. Additionally, they did not understand the firebase commands and where to find API keys, as they did not have prior experience with Firebase; the documentation did not provide any significant information on where to find these required keys (other than that they were needed).
+
+## Screenshots
+Find them in the folder `Octave-master/cypress/screenshots`
